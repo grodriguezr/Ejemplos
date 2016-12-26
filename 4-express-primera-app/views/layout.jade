@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= 'Ejemplo Express'
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        ul
+            li Texto de lista
+        input(type = 'text').mITexto#mIdITexto
+        - var condicion = true
+        - var miArray = [1, 2, 3]
+        each value in miArray
+            p= value
+        if condicion
+            p condición es true
+        block content
