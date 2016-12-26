@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<p>Bienvenido a {{ title }}</p>
+{{# if condicion }}
+    condición es verdadero
+{{ else }}
+    condición es falso
+{{/if}}
+
+{{# each miArray as |valor key|}}
+    {{ key }}: {{ valor }}
+{{/each}}
